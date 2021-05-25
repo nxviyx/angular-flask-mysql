@@ -6,9 +6,9 @@ app = Flask(__name__,static_url_path='',static_folder='dist',template_folder='di
 Compress(app)
 
 
-@app.route('/hello')
+@app.route('/')
 def test():
-    return "Hellow world"
+    return render_template("index.html")
 
 
 if __name__ == '__main__':
